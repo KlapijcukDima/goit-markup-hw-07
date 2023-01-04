@@ -1,0 +1,65 @@
+.footer{
+    padding-top: 60px;
+    padding-bottom: 60px;
+    margin-top: 0;
+    margin-bottom: 0;
+    background-color: $background-color;
+
+    &__main-block{
+        display: flex;
+        align-items: baseline;
+    }
+
+    &__contact-block{
+        margin-right: 70px;
+    }
+
+    &__logo-link{
+        display: inline-block;
+    
+        margin-bottom: 20px;
+        font-family: Raleway, sans-serif;
+        color: #FFFFFF;
+        
+    
+        font-size: 26px;
+        line-height: 1.19;
+    }
+
+    &__logo-style{
+        color: $hover-color;
+    }
+    
+    &__address{
+        font-style: normal;
+    
+        color: $main-color;
+        
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.71;
+    
+    }
+    
+    &__contact{
+        color: rgba(255, 255, 255, 0.6);;
+        font-style: normal;
+    
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.14;  
+        letter-spacing: 0.02em;
+    }
+    
+}
+
+
+.footer__item{
+
+    margin-top: 0;
+
+    &:not(:last-child){
+        margin-bottom: 9px;
+    }
+}
+
