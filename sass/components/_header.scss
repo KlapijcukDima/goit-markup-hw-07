@@ -1,140 +1,153 @@
-.header-section{
+.header__section{
     display: flex;
     align-items: center;
 }
 
 
-.header__nav{
+.nav{
     display: flex;
     align-items: center;    
+
+    &__list{
+        display: flex;  
+        margin-left: 90px;
+
+        & .nav__item:not(:last-child){
+            margin-right: 50px;
+        
+        }
+
+        & .nav__items--current{
+            color: $hover-color;
+        }
+
+        & .nav__items:hover,
+        & .nav__items:focus{
+    color: $hover-color;
+    
+        }
+
+        & .nav__items.nav__item--current{
+    color: $hover-color;
+        }
+    
+    }
+
+    &__items{
+        display: block;
+        padding-top: 32px;
+        padding-bottom: 32px;    
+        color: $title-text-color;
+    
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.02em;
+        transition-property: color;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-duration: 250ms;
+
+        &.nav__items--current{
+            position: relative;
+        }
+        
+        &.nav__items--current::after{
+            content: '';
+            position: absolute;
+            bottom: 0;
+            display: block;
+            width: 100%;
+            height: 4px;
+            border-radius: 2px;
+            background-color: $hover-color;
+        }
+        
+    
+    }
+
+
 }
 
 
-.header__link-logo{
+.logo{
     font-family: Raleway, sans-serif;
     color: $black-color;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
 
-}
-
-
-.header__logo-style{
-    color: $hover-color;
-}
-
-
-.header__list{
-    display: flex;  
-    margin-left: 90px;
-
-    & .header__item:not(:last-child){
-        margin-right: 50px;
-    
-    }
-
-    & .header__items.current{
+    &__style{
         color: $hover-color;
     }
 
 }
 
-.header__items{
-    display: block;
-    padding-top: 32px;
-    padding-bottom: 32px;    
-    color: $title-text-color;
 
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    transition-property: color;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-duration: 250ms;
-
-    &.current::after{
-        content: '';
-        position: absolute;
-        bottom: 0;
-        display: block;
-        width: 100%;
-        height: 4px;
-        border-radius: 2px;
-        background-color: $hover-color;
-    }
-
-    &.current{
-        position: relative;
-    }
-    
-
-}
-
-
-.header__contact{
-
+.contacts{
     margin-left: auto;
-    padding: 0;
-    margin-top: 0;
-    margin-bottom: 0;
     display: flex;
-    list-style: none;
+    gap: 30px;
 
-    color: $text-color;
-    font-style: normal;
+    &__link{
 
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;  
-    letter-spacing: 0.02em;
-    transition-property: color;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-duration: 250ms;
+        margin-left: auto;
+        padding: 0;
+        margin-top: 0;
+        margin-bottom: 0;
+        display: flex;
+        list-style: none;
+    
+        color: $text-color;
+        font-style: normal;
+    
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.14;  
+        letter-spacing: 0.02em;
+        transition-property: color;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-duration: 250ms;
 
-    & .header__item-contact:last-child{
-        margin-left: 50px;
+        &:hover,
+        &:focus{
+             color: $hover-color;
+        }
+    
+    }
+
+    &__icon{
+        fill: $text-color;
+        margin-right: 10px;
+        transition-property: fill;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-duration: 250ms;
+    
+    }
+
+    &__icon--position{
+        margin-left: 10px;
     }
     
     
-    &:hover,
-    &:focus{
-        color: $hover-color;
-    }
-
-}
-
-
-.header__list .header__items:hover,
-.header__list .header__items:focus{
-    color: $hover-color;
-
-    & .header__items.current{
-        color: $hover-color;
-    }
-    
-}
-
-
-
-.header__icon-contact{
-    fill: $text-color;
-    margin-right: 10px;
-    transition-property: fill;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-duration: 250ms;
-
-}
-
-.header__icon-position{
-    margin-left: 10px;
-
-    &:hover .header__icon-contact{
+    &__icon--position:hover .contacts__icon{
         fill: $hover-color;
     
     }
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .line{
     border-bottom: 1px solid $line-color;

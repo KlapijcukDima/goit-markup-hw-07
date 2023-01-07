@@ -14,22 +14,6 @@
         margin-right: 70px;
     }
 
-    &__logo-link{
-        display: inline-block;
-    
-        margin-bottom: 20px;
-        font-family: Raleway, sans-serif;
-        color: #FFFFFF;
-        
-    
-        font-size: 26px;
-        line-height: 1.19;
-    }
-
-    &__logo-style{
-        color: $hover-color;
-    }
-    
     &__address{
         font-style: normal;
     
@@ -51,6 +35,25 @@
         letter-spacing: 0.02em;
     }
     
+
+    
+}
+
+
+.footer__logo{
+    display: inline-block;
+
+    margin-bottom: 20px;
+    font-family: Raleway, sans-serif;
+    color: $main-color;
+    
+
+    font-size: 26px;
+    line-height: 1.19;
+
+    &-style{
+        color: $hover-color;
+    }
 }
 
 
@@ -61,5 +64,7 @@
     &:not(:last-child){
         margin-bottom: 9px;
     }
+
 }
+
 

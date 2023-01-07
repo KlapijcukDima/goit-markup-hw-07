@@ -1,45 +1,48 @@
-.section-additional{
-    padding-top: 94px;
-}
+.filters{
 
-
-.our-works{
-    visibility: hidden;
-    margin-top: 0;
-    text-align: center;
-}
-
-.button__list{
-    display: flex;
-    justify-content: center;
-    column-gap: 8px;
-    margin-bottom: 34px;
-}
-
-
-
-
-.button__portfolio{
-    background-color: $team-section-bgrc;
+    &__title{
+        visibility: hidden;
+        margin-top: 0;
+        text-align: center;
+    }
     
-    padding: 6px 22px;
-    border-radius: 4px;
-    border: none;
-  
-    font: 500 16px Roboto;
-    line-height: 1.62;
-    color: $title-text-color;
-  
-    cursor: pointer;
-  
-    transition: all 0.25s ease-in;
+    &__list{
+        display: flex;
+        justify-content: center;
+        column-gap: 8px;
+        margin-bottom: 34px;
+    }
+    
+    
+    
+    
+    &__button{
+        background-color: $team-section-bgrc;
+        
+        padding: 6px 22px;
+        border-radius: 4px;
+        border: none;
+      
+        font: 500 16px Roboto;
+        line-height: 1.62;
+        color: var(--title-text-color);
+      
+        cursor: pointer;
+      
+        transition: all 0.25s ease-in;
 
-    &:hover,
-    &:focus{
-    background-color: $hover-color;
-    color: $main-color;
+        &:hover,
+        &:focus{
+            background-color: $hover-color;
+            color: $main-color;
+            }
+    }
 }
-}
+
+
+
+
+
 
 
 

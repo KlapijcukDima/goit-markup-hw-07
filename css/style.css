@@ -74,19 +74,19 @@ textarea{
 /* |===================================================================| */
 
 
-.header-section{
+.header__section{
     display: flex;
     align-items: center;
 }
 
 
-.header__nav{
+.nav{
     display: flex;
     align-items: center;    
 }
 
 
-.header__link-logo{
+.logo{
     font-family: Raleway, sans-serif;
     color: #000000;
     font-weight: 700;
@@ -97,18 +97,28 @@ textarea{
 
 
 
-.header__logo-style{
+.logo__style{
     color: var(--hover-color);
 }
 
 
-.header__list{
+.nav__list{
     display: flex;  
     margin-left: 90px;
 
 }
 
-.header__items{
+
+.nav__list .nav__item:not(:last-child){
+    margin-right: 50px;
+
+}
+
+.nav__list .nav__items--current{
+    color: var(--hover-color);
+}
+
+.nav__items{
     display: block;
     padding-top: 32px;
     padding-bottom: 32px;    
@@ -125,20 +135,23 @@ textarea{
 
 }
 
-.header__list .header__item:not(:last-child){
-    margin-right: 50px;
 
+
+.nav__list .nav__items:hover,
+.nav__list .nav__items:focus{
+    color: var(--hover-color);
+    
 }
 
-.header__list .header__items.current{
+.nav__list .nav__items.nav__item--current{
     color: var(--hover-color);
 }
 
-.header__items.current{
+.nav__items.nav__items--current{
     position: relative;
 }
 
-.header__items.current::after{
+.nav__items.nav__items--current::after{
     content: '';
     position: absolute;
     bottom: 0;
@@ -150,7 +163,14 @@ textarea{
 }
 
 
-.header__contact{
+.contacts__list{
+    margin-left: auto;
+    display: flex;
+    gap: 30px;
+}
+
+
+.contacts__link{
 
     margin-left: auto;
     padding: 0;
@@ -173,27 +193,15 @@ textarea{
 }
 
 
-.header__contact .header__item-contact:last-child{
-    margin-left: 50px;
-}
-
-
-.header__contact:hover,
-.header__contact:focus{
+.contacts__link:hover,
+.contacts__link:focus{
     color: var(--hover-color);
 }
 
-.header__list .header__items:hover,
-.header__list .header__items:focus{
-    color: var(--hover-color);
-    
-}
 
-.header__list .header__items.current{
-    color: var(--hover-color);
-}
 
-.header__icon-contact{
+
+.contacts__icon{
     fill: #757575;
     margin-right: 10px;
     transition-property: fill;
@@ -202,12 +210,12 @@ textarea{
 
 }
 
-.header__icon-position{
+.contacts__icon--position{
     margin-left: 10px;
 }
 
 
-.header__icon-position:hover .header__icon-contact{
+.contacts__icon--position:hover .contacts__icon{
     fill: #2196f3;
 
 }
@@ -301,7 +309,7 @@ textarea{
 
 
 
-.features__title-main{
+/* .features__title-main{
     visibility: hidden;
     margin-top: 0;
     margin-bottom: 0;
@@ -331,7 +339,7 @@ textarea{
     column-gap: 30px;
 }
 
-.features__block-icon{
+.features__block{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -359,13 +367,13 @@ textarea{
     font-size: 14px;
     line-height: 1.71;
     
-}
+} */
 
 /* |===================================================================| */
 /* |<================↓-Our-works (STUDIO)-↓============↥↥====>| */
 /* |===================================================================| */
 
-.section-work{
+/* .work{
     padding-top: 0;
 }
 
@@ -387,12 +395,12 @@ textarea{
     gap: 30px;
 }
 
-.work__overlay-container{
+.work__overlay{
     position: relative;
 
 }
 
-.work__overlay-box{
+.work__overlay--box{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -405,7 +413,7 @@ textarea{
 }
 
 
-.work__action-description{
+.work__overlay--text{
     font-style: normal;
     font-weight: 700;
     font-size: 14px;
@@ -415,7 +423,7 @@ textarea{
     text-transform: uppercase;
 
     color: #FFFFFF;
-}
+} */
 
 
 
@@ -424,121 +432,7 @@ textarea{
 /* |<================↓-Team (STUDIO)-↓============↥↥====>| */
 /* |===================================================================| */
 
-.team__section-color{
-    background-color: #F5F4FA;
-    padding-top: 94px;
-}
 
-.team__title{
-    margin-bottom: 50px;
-    color: var(--title-color);
-
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.16;
-    text-align: center; 
-}
-
-.team__list{
-    display: flex;
-    list-style: none;
-    gap: 30px;
-}
-
-.team__item{
-    background-color: #FFFFFF;
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 0px 0px 4px 4px;
-}
-
-
-
-.team__workers{
-    display: inline-block;
-    display: flex;
-    justify-content: center;
-
-    margin-top: 21.5px;
-    margin-bottom: 10px;
-    color: var(--title-color);
-
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.18;  
-    letter-spacing: 0.03em;
-}
-
-
-.team__specialty-workers{
-
-    display: flex;
-    justify-content: center;
-
-    margin-top: 0;
-    color: var(--text-color);
-
-   
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.18;
-    
-}
-
-
-.team__socials-list{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-
-}
-.team__socials-item{
-    margin-top: 16px;
-    margin-bottom: 30px;
-}
-
-.team__icon-link{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 44px;
-    height: 44px;
-
-    background-color: #FFFFFF;
-
-    border-radius: 50%;
-    transition-property: background-color;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-duration: 250ms;
-
-
-
-
-}
-
-.icon-social{
-    fill: #AFB1B8;
-    transition-property: fill;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-duration: 250ms;
- 
-}
-
-.team__icon-link:hover{
-    background-color: #2196f3;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-duration: 250ms;
-    transition-property: background-color;
-    
-}
-
-.team__icon-link:hover .icon-social{
-    fill: #FFFFFF;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-duration: 250ms;
-    transition-property: fill;
-    
-}
 
 
 
@@ -546,11 +440,7 @@ textarea{
 /* |<================↓-Company (STUDIO)-↓============↥↥====>| */
 /* |===================================================================| */
 
-.section-client{
-    padding-top: 94px;
-}
-
-.client__title{
+/* .comapny__title{
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
@@ -625,7 +515,7 @@ textarea{
     fill: var(--hover-color);
 
 
-}
+} */
 
 
 /* |===================================================================| */
@@ -633,7 +523,7 @@ textarea{
 /* |===================================================================| */
 
 
-.footer{
+/* .footer{
     padding-top: 60px;
     padding-bottom: 60px;
     margin-top: 0;
@@ -652,7 +542,7 @@ textarea{
     margin-right: 70px;
 }
 
-.footer__logo-link{
+.footer__logo{
     display: inline-block;
 
     margin-bottom: 20px;
@@ -698,7 +588,7 @@ textarea{
 
 .footer__item:not(:last-child){
     margin-bottom: 9px;
-}
+} */
 
 
 /* |===================================================================| */
@@ -709,7 +599,7 @@ textarea{
 
 
 
-.footer__title-join{
+/* .join__title{
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
@@ -723,13 +613,13 @@ textarea{
 }
 
 
-.footer__list-join{
+.join__list{
     display: flex;
     gap: 10px;
 }
 
 
-.footer__link-join{
+.join__link{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -744,7 +634,7 @@ textarea{
 
 }
 
-.footer__link-join:hover{
+.join__link:hover{
     background-color: #2196f3;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-duration: 250ms;
@@ -753,21 +643,21 @@ textarea{
 
 
 
-.footer__icon-join{
+.join__icon{
     fill: #FFFFFF;
 
-}
+} */
 
 /* |===================================================================| */
 /* |<================↓-FOOTER container SUB(STUDIO)-↓============↥↥====>| */
 /* |===================================================================| */
 
 
-.footer__sub{
+/* .subscribe{
     margin-left: auto;
 }
 
-.footer__sub-title{
+.subscribe__title{
     color: #ffffff;
     margin-bottom: 20px;
     font-weight: 700;
@@ -777,12 +667,12 @@ textarea{
     text-transform: uppercase;
 }
 
-.footer__sub-block{
+.subscribe__block{
     display: flex;
     flex-wrap: nowrap;
 }
 
-.footer__sub-input{
+.subscribe__input{
     background-color: transparent;
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -799,16 +689,16 @@ textarea{
 
 }
 
-.footer__sub-input:focus{
+.subscribe__input:focus{
     background-color: #AFB1B8;
 }
 
-.footer__sub-input:hover,
-.footer__sub-input:focus{
+.subscribe__input:hover,
+.subscribe__input:focus{
     border-color: #2196f3;
 }
 
-.footer__sub-subscribe{
+.subscribe__btn{
     background-color: var(--hover-color);
     display: flex;
     align-items: center;
@@ -831,10 +721,10 @@ textarea{
 
 }
 
-.footer__sub-icon{
+.subscribe__icon{
     display: block;
     margin-left: 10px;
-}
+} */
 
 
 
@@ -845,18 +735,16 @@ textarea{
 /* |<================↓-Main(Portfolio)-↓============↥↥====>| */
 /* |===================================================================| */
 
-.section-additional{
-    padding-top: 94px;
-}
 
 
-.our-works{
+
+/* .filters__title{
     visibility: hidden;
     margin-top: 0;
     text-align: center;
 }
 
-.button__list{
+.filters__list{
     display: flex;
     justify-content: center;
     column-gap: 8px;
@@ -866,7 +754,7 @@ textarea{
 
 
 
-.button__portfolio{
+.filters__button{
     background-color: #F5F4FA;
     
     padding: 6px 22px;
@@ -882,11 +770,13 @@ textarea{
     transition: all 0.25s ease-in;
 }
 
-.button__portfolio:hover,
-.button__portfolio:focus{
+.filters__button:hover,
+.filters__button:focus{
     background-color: var(--hover-color);
     color: #FFFFFF;
-}
+} */
+
+
 
 .portfolio__list{
     display: flex;
@@ -902,7 +792,7 @@ textarea{
     width: 370px;
 }
 
-.cards{
+/* .cards{
     border: 1px solid #EEEEEE;
     border-top: 0;
     
@@ -919,7 +809,7 @@ textarea{
 
 
 
-.title-img{
+.cards__title{
     padding: 20px 24px 4px 24px;
     color: var(--title-color);
 
@@ -930,14 +820,14 @@ textarea{
     letter-spacing: 0.06em;
 }
 
-.text-img{
+.cards__text{
     padding: 4px 24px 20px 24px;
     color: var(--text-color);
 
     font-weight: 400;
     font-size: 16px;
     line-height: 1.88;
-}
+} */
 
 
 /* MODAL WINDOW */
@@ -1209,7 +1099,7 @@ textarea{
 /* Ection Portfolio */
 
 
-.portfolio__link{
+/* .portfolio__link{
     text-decoration: none;
     display: block;
     transition-property: transform, box-shadow;
@@ -1254,5 +1144,5 @@ img {
     padding: 63px 24px;
     text-align: left;
     color: #FFFFFF;
-}
+} */
 

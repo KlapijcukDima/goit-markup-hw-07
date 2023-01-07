@@ -15,48 +15,51 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
     <link rel="stylesheet" href="./css/main.min.css">
+    <!-- <link rel="stylesheet" href="./css/style.css"> -->
   </head>
   <body>
     <header class="header">
-      <div class="container header-section">
-        <nav class="header__nav">
-          <a href="./index.html" class="header__link-logo"
-            ><span class="header__logo-style">Web</span>Studio</a
+      <div class="container header__section">
+        <nav class="nav">
+          <a href="./index.html" class="logo"
+            ><span class="logo__style">Web</span>Studio</a
           >
 
-          <ul class="header__list link">
-            <li class="header__item">
-              <a href="./index.html" class="header__items">Студія</a>
+          <div class="nav__block">
+          <ul class="nav__list link">
+            <li class="nav__item">
+              <a href="./index.html" class="nav__items">Студія</a>
             </li>
 
-            <li class="header__item">
-              <a href="#" class="header__items current">Портфоліо</a>
+            <li class="nav__item">
+              <a href="#" class="nav__items nav__items--current">Портфоліо</a>
             </li>
 
-            <li class="header__item">
-              <a href="#" class="header__items">Контакти</a>
+            <li class="nav__item">
+              <a href="#" class="nav__items">Контакти</a>
             </li>
           </ul>
+        </div>
         </nav>
 
-        <ul class="header__contact">
-          <li class="header__item-contact">
+        <ul class="contacts">
+          <li class="contacts__item">
             <a
               href="mailto:info@devstudio.com"
-              class="header__contact header__icon-position"
+              class="contacts__link contacts__icon--position"
             >
-              <svg class="header__icon-contact" width="12" height="16">
+              <svg class="contacts__icon" width="12" height="16">
                 <use href="./images/icon/symbol-defs.svg#icon-envelope"></use>
               </svg>
               info@devstudio.com</a
             >
           </li>
-          <li class="header__item-contact">
+          <li class="contacts__item">
             <a
               href="mailto:info@devstudio.com"
-              class="header__contact header__icon-position"
+              class="contacts__link contacts__icon--position"
             >
-              <svg class="header__icon-contact" width="12" height="16">
+              <svg class="contacts__icon" width="12" height="16">
                 <use href="./images/icon/symbol-defs.svg#icon-smartphone"></use>
               </svg>
               info@devstudio.com</a
@@ -66,30 +69,30 @@
       </div>
     </header>
     <div class="line"></div>
-
     <!-- Main -->
     <main>
-      <section class="section section-additional">
+      <section class="section filters">
         <div class="container">
-          <h1 class="our-works">Наші роботи</h1>
-          <ul class="button__list">
-            <li class="button__items">
-              <button type="button" class="button__portfolio">Усі</button>
+          <h1 class="filters__title">Наші роботи</h1>
+          <ul class="filters__list">
+            <li class="filters__items">
+              <button type="button" class="filters__button">Усі</button>
             </li>
-            <li class="button__items">
-              <button type="button" class="button__portfolio">Веб-сайти</button>
+            <li class="filters__items">
+              <button type="button" class="filters__button">Веб-сайти</button>
             </li>
-            <li class="button__items">
-              <button type="button" class="button__portfolio">Додатки</button>
+            <li class="filters__items">
+              <button type="button" class="filters__button">Додатки</button>
             </li>
-            <li class="button__items">
-              <button type="button" class="button__portfolio">Дизайн</button>
+            <li class="filters__items">
+              <button type="button" class="filters__button">Дизайн</button>
             </li>
-            <li class="button__items">
-              <button type="button" class="button__portfolio">Маркетинг</button>
+            <li class="filters__items">
+              <button type="button" class="filters__button">Маркетинг</button>
             </li>
           </ul>
 
+          <div class="portfolio">
           <ul class="portfolio__list">
             <li class="portfolio__item">
             <a href="" class="portfolio__link">
@@ -107,8 +110,8 @@
 
 
               <div class="cards">
-                <h2 class="title-img">Технокряк</h2>
-                <p class="text-img">Веб-сайт</p>
+                <h2 class="cards__title">Технокряк</h2>
+                <p class="cards__text">Веб-сайт</p>
               </div>
             </a>
             </li>
@@ -132,8 +135,8 @@
   
   
                 <div class="cards">
-                  <h2 class="title-img">Постер New Orlean vs Golden Star</h2>
-                  <p class="text-img">Дизайн</p>
+                  <h2 class="cards__title">Постер New Orlean vs Golden Star</h2>
+                  <p class="cards__text">Дизайн</p>
                 </div>
               </a>
               </li>
@@ -156,8 +159,8 @@
     
     
                   <div class="cards">
-                    <h2 class="title-img">Ресторан Seafood</h2>
-                    <p class="text-img">Додатокт</p>
+                    <h2 class="cards__title">Ресторан Seafood</h2>
+                    <p class="cards__text">Додатокт</p>
                   </div>
                 </a>
                 </li>
@@ -180,8 +183,8 @@
       
       
                     <div class="cards">
-                      <h2 class="title-img">Проєкт Prime</h2>
-                      <p class="text-img">Маркетинг</p>
+                      <h2 class="cards__title">Проєкт Prime</h2>
+                      <p class="cards__text">Маркетинг</p>
                     </div>
                   </a>
                   </li>
@@ -205,8 +208,8 @@
         
         
                       <div class="cards">
-                        <h2 class="title-img">Проєкт Boxes</h2>
-                        <p class="text-img">Додаток</p>
+                        <h2 class="cards__title">Проєкт Boxes</h2>
+                        <p class="cards__text">Додаток</p>
                       </div>
                     </a>
                     </li>
@@ -229,8 +232,8 @@
       
       
                     <div class="cards">
-                      <h2 class="title-img">Inspiration has no Borders</h2>
-                      <p class="text-img">Веб-сайт</p>
+                      <h2 class="cards__title">Inspiration has no Borders</h2>
+                      <p class="cards__text">Веб-сайт</p>
                     </div>
                   </a>
                   </li>
@@ -253,8 +256,8 @@
         
         
                       <div class="cards">
-                        <h2 class="title-img">Видання Limited Edition</h2>
-                        <p class="text-img">Дизайн</p>
+                        <h2 class="cards__title">Видання Limited Edition</h2>
+                        <p class="cards__text">Дизайн</p>
                       </div>
                     </a>
                     </li>
@@ -277,8 +280,8 @@
           
           
                         <div class="cards">
-                          <h2 class="title-img">Проєкт LAB</h2>
-                          <p class="text-img">Маркетинг</p>
+                          <h2 class="cards__title">Проєкт LAB</h2>
+                          <p class="cards__text">Маркетинг</p>
                         </div>
                       </a>
                       </li>
@@ -301,21 +304,22 @@
             
             
                           <div class="cards">
-                            <h2 class="title-img">Growing Business</h2>
-                            <p class="text-img">Додаток</p>
+                            <h2 class="cards__title">Growing Business</h2>
+                            <p class="cards__text">Додаток</p>
                           </div>
                         </a>
                         </li>
             </li>
           </ul>
         </div>
+      </div>
       </section>
     </main>
 
     <footer class="footer">
       <div class="container footer__main-block">
         <div class="footer__contact-block">
-        <a href="#" class="footer__logo-link">
+        <a href="#" class="footer__logo">
           <span class="footer__logo-style">Web</span>Studio</a
         >
         <address>
@@ -342,13 +346,13 @@
       </div>
       
       <!-- FOOTER container join in -->
-      <div class="footer__block-join">
-        <p class="footer__title-join">Приєднуйтесь</p>
-        <ul class="footer__list-join">
+      <div class="join">
+        <p class="join__title">Приєднуйтесь</p>
+        <ul class="join__list">
           
-          <li class="footer__item-join">
-            <a href="#" class="footer__link-join">
-              <svg class="footer__icon-join" width="20" height="20">
+          <li class="join__item">
+            <a href="#" class="join__link">
+              <svg class="join__icon" width="20" height="20">
                 <use
                   href="./images/icon/symbol-defs.svg#icon-instagram"
                 ></use>
@@ -356,9 +360,9 @@
             </a>
           </li>
 
-          <li class="footer__item-join">
-            <a href="#" class="footer__link-join">
-              <svg class="footer__icon-join" width="20" height="20">
+          <li class="join__item">
+            <a href="#" class="join__link">
+              <svg class="join__icon" width="20" height="20">
                 <use
                   href="./images/icon/symbol-defs.svg#icon-twitter"
                 ></use>
@@ -366,9 +370,9 @@
             </a>
           </li>
 
-          <li class="footer__item-join">
-            <a href="#" class="footer__link-join">
-              <svg class="footer__icon-join" width="20" height="20">
+          <li class="join__item">
+            <a href="#" class="join__link">
+              <svg class="join__icon" width="20" height="20">
                 <use
                   href="./images/icon/symbol-defs.svg#icon-facebook"
                 ></use>
@@ -376,9 +380,9 @@
             </a>
           </li>
 
-          <li class="footer__item-join">
-            <a href="#" class="footer__link-join">
-              <svg class="footer__icon-join" width="20" height="20">
+          <li class="join__item">
+            <a href="#" class="join__link">
+              <svg class="join__icon" width="20" height="20">
                 <use
                   href="./images/icon/symbol-defs.svg#icon-linkedin"
                 ></use>
@@ -392,12 +396,12 @@
       </div>
 
         <!-- SUB FOOTER -->
-      <div class="footer__sub">
-        <p class="footer__sub-title">Підпишіться на розсилку</p>
-        <div class="footer__sub-block">
-          <input class="footer__sub-input" type="email" name="mailink" placeholder="E-mail">
-          <button class="footer__sub-subscribe" type="submit">Підписатися
-            <svg class="footer__sub-icon" width="24" height="24">
+      <div class="subscribe">
+        <p class="subscribe__title">Підпишіться на розсилку</p>
+        <div class="subscribe__block">
+          <input class="subscribe__input" type="email" name="mailink" placeholder="E-mail">
+          <button class="subscribe__btn" type="submit">Підписатися
+            <svg class="subscribe__icon" width="24" height="24">
               <use href="./images/icon/symbol-defs.svg#icon-telegram"></use>
             </svg>
           </button>

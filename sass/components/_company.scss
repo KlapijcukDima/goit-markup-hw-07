@@ -1,8 +1,4 @@
-.section-client{
-    padding-top: 94px;
-}
-
-.client__title{
+.comapny__title{
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
@@ -16,62 +12,76 @@
     margin-bottom: 50px;
 }
 
-.company__list{
+.company{
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 30px;
-}
+    
+    
+    &__item{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 170px;
+        height: 92px;
+        border-radius: 4px;
+    
+    }
+    
+    
+    &__link{  
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        border: 1px solid $icon-fill;
+        border-radius: 4px;
+      
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-duration: 250ms;
+        transition-property: border;
 
-.company__item{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 170px;
-    height: 92px;
-    border-radius: 4px;
+        &:hover{
+            border-color: $hover-color;
+        }
+        
+        &:hover .company__icon{
+            fill: $hover-color;
+        
+        
+        }
 
-}
-
-
-.company__link{  
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
-    border: 1px solid $icon-fill;
-    border-radius: 4px;
-  
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-duration: 250ms;
-    transition-property: border;
-
-    &:hover,
-    &:focus{
-        border-color: $hover-color;
     }
 
-    &:hover .company__icon,
-    &:focus .company__icon{
-    fill: $hover-color;
-}
 
-}
+    &__icon{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        fill: $icon-fill;
+      
+        transition-property: fill;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-duration: 250ms;
 
-
-.company__icon{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    fill: $icon-fill;
-  
-    transition-property: fill;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-duration: 250ms;
-
-    &:hover,
-    &:focus{
-    fill: $hover-color;
+        &:focus{
+            fill: $hover-color;
+        
+        }
     }
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
