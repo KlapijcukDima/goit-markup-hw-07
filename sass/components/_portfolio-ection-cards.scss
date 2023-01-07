@@ -5,9 +5,7 @@
         display: flex;
         flex-wrap: wrap;
         margin: 0;
-        -moz-column-gap: 30px;
-        column-gap: 30px;
-        row-gap: 30px;
+        gap: 30px;
     }
     
     

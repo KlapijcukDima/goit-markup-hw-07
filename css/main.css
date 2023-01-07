@@ -1284,7 +1284,7 @@ ul {
 }
 
 .cards {
-  border: 1px solid #ffffff;
+  border: 1px solid #EEEEEE;
   border-top: 0;
 }
 .cards__title {
@@ -1310,10 +1310,7 @@ ul {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin: 0;
-  -moz-column-gap: 30px;
-  -webkit-column-gap: 30px;
-          column-gap: 30px;
-  row-gap: 30px;
+  gap: 30px;
 }
 .portfolio__item {
   width: 370px;
