@@ -1,5 +1,22 @@
 .work{
-    padding-top: 94px;
+
+    @media screen and (min-width: 480px){
+        display: none;
+    }
+    // padding-top: 94px;
+
+    @media screen and (max-width: 768px){
+        display: none;
+    }
+
+    @media screen and (max-width: 1200px){
+        display: none;
+    }
+
+    @media screen and (min-width: 1200px){
+        display: flex;
+    }
+
 
     &__title{
 

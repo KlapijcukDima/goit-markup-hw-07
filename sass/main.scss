@@ -1,13 +1,14 @@
 //|||||| UTILS ||||||||
 @import './utils/modern-normalize';
+@import './utils/section';
+@import './utils/container';
 @import './utils/variables';
 @import './utils/reset';
 
 
 
+
 //|||||| COMPONENTS ||||||
-@import './components/section';
-@import './components/container';
 @import './components/header';
 @import './components/hero';
 @import './components/features-section';
