@@ -146,12 +146,21 @@
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
         transition-duration: 250ms;
 
+
+
+
         &:hover,
         &:focus{
              color: $hover-color;
         }
     
     }
+
+.contacts__link{
+    @media screen and (max-width: 1199.98px){
+        margin-bottom: 10px;
+    }
+}
 
     &__icon{
         fill: $text-color;
