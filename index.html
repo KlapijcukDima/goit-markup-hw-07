@@ -20,7 +20,7 @@
   </head>
   <body>
     <!-- Header section -->
-    <!-- <header class="header">
+    <header class="header">
       <div class="container header__section">
         <nav class="nav">
           <a href="#" class="logo"
@@ -68,8 +68,29 @@
             >
           </li>
         </ul>
+
+        <button
+        class="menu-toggle js-open-menu"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+      >
+        <svg
+          width="24"
+          height="24"
+          fill="currentColor"
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+      </button>
       </div>
-    </header> -->
+
+    </header>
     <div class="line"></div>
 
     <main>
@@ -150,7 +171,10 @@
          <ul class="work__list">
              <li class="work__item">
               <div class="work__overlay">
-              <img src="./images/box1.jpg" alt="work1" width="370" />
+                <picture>
+                  <source srcset="./images/img-desktop/project-work1@1x.jpg 1x, ./images/img-desktop/project-work1@2x.jpg 2x" media="min-width: 1200px">
+                  <img src="./images/img-desktop/project-work1@1x.jpg" alt="work1" width="370" />
+                </picture>
               <div class="work__overlay--box">
                 <p class="work__overlay--text">Десктопні додатки</p>
               </div>
@@ -161,7 +185,10 @@
 
             <li class="work__item">
               <div class="work__overlay">
-              <img src="./images/box2.jpg" alt="work2" width="370" />
+                <picture>
+                  <source srcset="./images/img-desktop/project-work2@1x.jpg 1x, ./images/img-desktop/project-work1@2x.jpg 2x" media="min-width: 1200px">
+                  <img src="./images/img-desktop/project-work2@1x.jpg" alt="work1" width="370" />
+                </picture>
               <div class="work__overlay--box">
                 <p class="work__overlay--text">Мобільні додатки</p>
               </div>
@@ -170,7 +197,10 @@
       
             <li class="work__item">
               <div class="work__overlay">
-              <img src="./images/box3.jpg" alt="work3" width="370" />
+                <picture>
+                  <source srcset="./images/img-desktop/project-work3@1x.jpg 1x, ./images/img-desktop/project-work3@2x.jpg 2x" media="min-width: 1200px">
+                  <img src="./images/img-desktop/project-work3@1x.jpg" alt="work1" width="370" />
+                </picture>
               <div class="work__overlay--box">
                 <p class="work__overlay--text">Дизайнерські рішення</p>
               </div>
@@ -188,7 +218,15 @@
           <h2 class="team__section--title">Наша команда</h2>
           <ul class="team">
             <li class="team__item">
-              <img src="./images/work1.jpg" alt="work1" width="270" class="team__img" />
+              <picture>
+                <source srcset="./images/img-desktop/desktop-ihor@1x.jpg 1x, ./images/img-desktop/desktop-ihor@2x.jpg 2x" media="(min-width: 1200px)">
+                <source srcset="./images/img-tablet/tablet-ihor@1x.jpg 1x, ./images/img-tablet/tablet-ihor@2x.jpg 2x" media="(min-width: 768px)">
+                <source srcset=".images/img-mobile/mobile-ihor@1x.jpg 1x, ./images/img-mobile/mobile-ihor@2x.jpg 2x" media="(max-width: 767.98px)">
+                <img src="./images/img-desktop/desktop-ihor@1x.jpg" 
+                alt="work1" 
+                width="270" 
+                class="team__img" />
+              </picture>
               <h3 class="team__name">Ігор Дем'яненко</h3>
               <p class="team__specialty">
                 Product Designer
@@ -235,7 +273,15 @@
               </ul>
             </li>
             <li class="team__item">
-              <img src="./images/work2.jpg" alt="working2" width="270" class="team__img" />
+              <picture>
+                <source srcset="./images/img-desktop/desktop-olga@1x.jpg 1x, ./images/img-desktop/desktop-olga@2x.jpg 2x" media="(min-width: 1200px)">
+                <source srcset="./images/img-tablet/tablet-olga@1x.jpg 1x, ./images/img-tablet/tablet-olga@2x.jpg 2x" media="(min-width: 768px)">
+                <source srcset="./images/img-mobile/mobile-olga@1x.jpg 1x, ./images/img-mobile/mobile-olga@2x.jpg 2x" media="(max-width: 767.98px)">
+                <img src="./images/img-desktop/desktop-olga@1x.jpg" 
+                alt="work1" 
+                width="270" 
+                class="team__img" />
+              </picture>
               <h3 class="team__name">Ольга Рєпіна</h3>
               <p class="team__specialty">
                 Frontend Doveloper
@@ -282,7 +328,15 @@
               </ul>
             </li>
             <li class="team__item">
-              <img src="./images/work3.jpg" alt="working3" width="270" class="team__img" />
+              <picture>
+                <source srcset="./images/img-desktop/desktop-kolya@1x.jpg 1x, ./images/img-desktop/desktop-kolya@2x.jpg 2x" media="(min-width: 1200px)">
+                <source srcset="./images/img-tablet/tablet-mikola@1x.jpg 1x, ./images/img-tablet/tablet-mikola@2x.jpg 2x" media="(min-width: 768px)">
+                <source srcset="./images/img-mobile/mobile-mikola@1x.jpg 1x, ./images/img-mobile/mobile-mikola@2x.jpg 2x" media="(max-width: 767.98px)">
+                <img src="./images/img-desktop/desktop-kolya@1x.jpg" 
+                alt="work1" 
+                width="270" 
+                class="team__img" />
+              </picture>
               <h3 class="team__name">Микола Тарасов</h3>
               <p class="team__specialty">Marketing</p>
               <ul class="team__socials">
@@ -327,7 +381,15 @@
               </ul>
             </li>
             <li class="team__item">
-              <img src="./images/work4.jpg" alt="working4" width="270" class="team__img" />
+              <picture>
+                <source srcset="./images/img-desktop/desktop-misha@1x.jpg 1x, ./images/img-desktop/desktop-misha@2x.jpg 2x" media="(min-width: 1200px)">
+                <source srcset="./images/img-tablet/tablet-misha@1x.jpg 1x, ./images/img-tablet/tablet-misha@2x.jpg 2x" media="(min-width: 768px)">
+                <source srcset="./images/img-mobile/mobile-misha@1x.jpg 1x, ./images/img-mobile/mobile-misha@2x.jpg 2x" media="(max-width: 767.98px)">
+                <img src="./images/img-desktop/desktop-misha@1x.jpg" 
+                alt="work1" 
+                width="270" 
+                class="team__img" />
+              </picture>
               <h3 class="team__name">Михайло Єрамаков</h3>
               <p class="team__specialty">
                 UI Designer
@@ -439,7 +501,7 @@
     </main>
 
     <!-- FOOTER -->
-     <!-- <footer class="footer">
+     <footer class="footer">
       <div class="container footer__main-block">
         <div class="footer__contact-block">
         <a href="#" class="footer__logo">
@@ -466,10 +528,10 @@
             </li>
           </ul>
         </address>
-      </div> -->
+      </div>
       
       <!-- FOOTER container join in -->
-      <!-- <div class="join">
+      <div class="join">
         <p class="join__title">Приєднуйтесь</p>
         <ul class="join__list">
           
@@ -516,20 +578,20 @@
           </ul>
 
         </li>
-      </div> -->
+      </div>
 
         <!-- SUB FOOTER -->
-      <!-- <div class="subscribe">
+      <div class="subscribe">
         <p class="subscribe__title">Підпишіться на розсилку</p>
-        <div class="subscribe__block">
+        <form class="subscribe__block">
           <input class="subscribe__input" type="email" name="mailink" placeholder="E-mail">
           <button class="subscribe__btn" type="submit">Підписатися
             <svg class="subscribe__icon" width="24" height="24">
               <use href="./images/icon/symbol-defs.svg#icon-telegram"></use>
             </svg>
           </button>
-        </div>
-      </div> -->
+        </form>
+      </div>
 
     </div>
     </footer>
@@ -600,9 +662,74 @@
 
       <button class="modal-agreement-btn" type="submit">Відправити</button>
     </div>
+
   </div>
 
+  <div class="menu-container js-menu-container" id="mobile-menu">
+    <button class="menu-toggle js-close-menu">
+      <svg
+        fill="currentColor"
+        viewBox="0 0 20 20"
+        xmlns="http://www.w3.org/2000/svg"
+        width="24"
+        height="24"
+      >
+        <path
+          fill-rule="evenodd"
+          d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+          clip-rule="evenodd"
+        ></path>
+      </svg>
+    </button>
+
+    <ul class="mobile-menu">
+      <li class="mobile-menu-items">
+        <a href="" class="mobile-menu-link link mobile__menu--current">Студія</a>
+      </li>
+      <li class="mobile-menu-items">
+        <a href="" class="mobile-menu-link link">Портфоліо</a>
+      </li>
+      <li class="mobile-menu-items">
+        <a href="" class="mobile-menu-link link">Контакти</a>
+      </li>
+    </ul>
+
+    <ul class="modal__contact">
+      <li class="modal__contact--items">
+        <a href="tel:+380961111111" class="modal__contact--link tell">+38 096 111 11 11</a>
+      </li>
+      <li class="modal__contact--items">
+        <a href="mailto:info@devstudio.com" class="modal__contact--link mail">info@devstudio.com</a>
+      </li>
+    </ul>
+
+    <ul class="modal__socials">
+      <li class="modal__socials--items">
+        <a href="" class="modal__socials--link">Instagram</a>
+       </li>
+       <li class="modal__socials--items">
+        <a href="" class="modal__socials--link">Twitter</a>
+       </li>
+       <li class="modal__socials--items">
+        <a href="" class="modal__socials--link">Facebook</a>
+       </li>
+       <li class="modal__socials--items">
+        <a href="" class="modal__socials--link">LinkedIn</a>
+       </li>
+    </ul>
+
+  </div>
+
+
+
     <script src="./js/modal.js"></script>
+    <script
+    defer
+    src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+    crossorigin="anonymous"
+  ></script>
+  <script defer src="./js/mobile-menu.js"></script>
 
   </body>
 </html>

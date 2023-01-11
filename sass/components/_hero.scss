@@ -5,12 +5,13 @@
     // margin-left: auto;
     // margin-right: auto;
     // text-align: center;
+    padding: 118px 0;
 
 
 
     @media screen and (max-width: 767.98px){
         max-width: 100%;
-        padding: 118px 60px 198px;
+
         margin-left: auto;
         margin-right: auto;
         text-align: center;
@@ -19,7 +20,17 @@
             to right
        ,  $linear-gradient
        ,  $linear-gradient
-       ), url(../images/mobile-hero@1x.jpg);
+       ), url(../../images/img-mobile/mobile-hero@1x.jpg);
+
+       @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        background-image: linear-gradient(
+            to right
+       ,  $linear-gradient
+       ,  $linear-gradient
+       ), url(../images/img-mobile/mobile-hero@2x.jpg);
+    }
+
+
        background-repeat: no-repeat;
        background-position: center;
        background-size: cover;
@@ -27,7 +38,7 @@
 
     @media screen and (min-width: 768px){
         max-width: 100%;
-        padding: 118px 204px 198px;
+
         margin-left: auto;
         margin-right: auto;
         text-align: center;
@@ -36,7 +47,16 @@
             to right
        ,  $linear-gradient
        ,  $linear-gradient
-       ), url(../images/tablet-hero@1x.jpg);
+       ), url(../images/img-tablet/tablet-hero@1x.jpg);
+
+       @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+       
+        background-image: linear-gradient(
+            to right
+       ,  $linear-gradient
+       ,  $linear-gradient
+       ), url(../images/img-tablet/tablet-hero@2x.jpg);
+    }
        background-repeat: no-repeat;
        background-position: center;
        background-size: cover;
@@ -46,7 +66,7 @@
     }
 
     @media screen and (min-width: 1200px){
-        max-width: 1600px;
+        max-width: 100%;
         padding-bottom: 200px;
         padding-top: 200px;
         margin-left: auto;
@@ -57,26 +77,21 @@
             to right
        ,  $linear-gradient
        ,  $linear-gradient
-       ), url(../images/project-hero@1x.jpg);
+       ), url(../images/img-desktop/project-hero@1x.jpg);
+
+       @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+       
+        background-image: linear-gradient(
+            to right
+       ,  $linear-gradient
+       ,  $linear-gradient
+       ), url(../images/img-desktop/project-hero@2x.jpg);
+    }
        background-repeat: no-repeat;
        background-position: center;
        background-size: cover;
     }
-
-
-
-    // background-image: linear-gradient(
-    //      to right
-    // ,  $linear-gradient
-    // ,  $linear-gradient
-    // ), url(../images/background-img.jpg);
-    // background-repeat: no-repeat;
-    // background-position: center;
-    // background-size: cover;
-
-
 }
-
 .hero__block{
     display: inline-block;
     margin-right: auto;

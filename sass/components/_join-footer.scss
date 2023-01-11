@@ -1,5 +1,11 @@
 .join{
 
+    @media screen and (max-width: 767.98px){
+        margin-top: 60px;
+
+    }
+
+
     &__title{
         font-family: 'Roboto';
         font-style: normal;
@@ -11,11 +17,23 @@
     
         color: $main-color;
         margin-bottom: 20px;
+
+        @media screen and (max-width: 767.98px){
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+
+
     }
     
     
     &__list{
         display: flex;
+        justify-content: center;
+        align-items: center;
         gap: 10px;
     }
     
